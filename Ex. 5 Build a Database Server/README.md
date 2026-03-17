@@ -2,9 +2,9 @@
 
 ## Author
 
-* **Name**: ________________________________
-* **Register Number**: _____________________
-* **Date of Submission**: __________________
+* **Name**: NANDEESWARI A
+* **Register Number**: 212224220074
+* **Date of Submission**: 17-03-2026
 
 ---
 
@@ -82,13 +82,17 @@ Test the database server by connecting to it locally or remotely and performing 
 
 ## Workflow (Student Explanation)
 
-(Write the steps you followed in your own words)
+1. Launch an EC2 instance using Amazon Linux 2 AMI and select a suitable instance type. Configure key pair and security group to prepare the instance for database server deployment.
+2. Modify the Security Group to allow:
 
-1. ---
-2. ---
-3. ---
-4. ---
-5. ---
+SSH (Port 22) for remote login
+
+Database port (3306 for MySQL / 5432 for PostgreSQL)
+This ensures secure access to the database server.
+
+3. Connect to the EC2 instance using SSH and install a database server such as MySQL, MariaDB, or PostgreSQL using package manager commands.
+4. Start the database service, configure root credentials, and set user privileges. Create a sample database, table, and insert records to prepare the system for usage.
+5. Test the database by connecting locally or remotely and executing basic SQL queries. This confirms that the database server is functioning correctly.
 
 ---
 
@@ -96,19 +100,19 @@ Test the database server by connecting to it locally or remotely and performing 
 
 ### Screenshot 1: EC2 Instance for Database Server
 
-(Insert Screenshot Here)
+<img width="1919" height="896" alt="Screenshot 2026-03-11 160405" src="https://github.com/user-attachments/assets/3e85a74c-ba9f-4e64-93fb-fb4032bef237" />
 
 ---
 
 ### Screenshot 2: Database Service Running
 
-(Insert Screenshot Here)
+<img width="1919" height="906" alt="Screenshot 2026-03-11 161131" src="https://github.com/user-attachments/assets/0317ae7e-65d2-4d98-8d09-68d36856113f" />
 
 ---
 
 ### Screenshot 3: Sample Database and Table
 
-(Insert Screenshot Here)
+<img width="1916" height="957" alt="Screenshot 2026-03-17 104504" src="https://github.com/user-attachments/assets/26258aa8-cb2f-4502-b2ec-46d502df82a8" />
 
 ---
 
