@@ -2,9 +2,9 @@
 
 ## Author
 
-* **Name**: ________________________________
-* **Register Number**: _____________________
-* **Date of Submission**: __________________
+* **Name**: NANDEESWARI A 
+* **Register Number**: 212224220068
+* **Date of Submission**: 17-03-2026
 
 ---
 
@@ -96,13 +96,17 @@ Terminate the EC2 instance after completing the experiment to avoid unnecessary 
 
 ## Workflow (Student Explanation)
 
-(Write the steps you followed in your own words)
+1. Access the Amazon EC2 dashboard in the AWS Management Console and explore key components such as Instances, AMIs, Instance Types, Key Pairs, Security Groups, and Elastic IPs to understand available resources and configurations.
+2. Launch an EC2 instance using Amazon Linux 2 AMI and select a free-tier eligible instance type (t2.micro). Configure essential settings including instance name, key pair for authentication, and initial security group.
+3. Configure the Security Group to allow:
 
-1. ---
-2. ---
-3. ---
-4. ---
-5. ---
+SSH (Port 22) from a specific IP for secure remote access
+
+HTTP (Port 80) from anywhere for web access
+This ensures controlled and secure communication with the instance.
+
+4. Connect to the EC2 instance using SSH with the key pair. Perform basic operations like start, stop, and reboot, and observe how the instance state changes in the console.
+5. Monitor the instance using the Monitoring tab to track CPU usage, network activity, and status checks. After completing the tasks, terminate the instance to prevent unnecessary costs.
 
 ---
 
@@ -110,19 +114,19 @@ Terminate the EC2 instance after completing the experiment to avoid unnecessary 
 
 ### Screenshot 1: EC2 Dashboard / Instance List
 
-(Insert Screenshot Here)
+<img width="1902" height="911" alt="Screenshot 2026-02-24 111106" src="https://github.com/user-attachments/assets/bffca923-9175-4633-bdcc-6a2a002c32a5" />
 
 ---
 
 ### Screenshot 2: SSH Connection to Instance
 
-(Insert Screenshot Here)
+<img width="1908" height="913" alt="Screenshot 2026-02-24 112804" src="https://github.com/user-attachments/assets/b6348737-1220-4a4d-bcb7-17464f00ce52" />
 
 ---
 
 ### Screenshot 3: Instance Monitoring / Status
 
-(Insert Screenshot Here)
+<img width="1913" height="913" alt="Screenshot 2026-02-24 113120" src="https://github.com/user-attachments/assets/ec71ca48-286f-47eb-9a69-87e41709deb6" />
 
 ---
 
