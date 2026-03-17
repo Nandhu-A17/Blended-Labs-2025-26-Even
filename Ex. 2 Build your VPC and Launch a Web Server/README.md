@@ -2,9 +2,9 @@
 
 ## Author
 
-* **Name**: ________________________________
-* **Register Number**: _____________________
-* **Date of Submission**: __________________
+* **Name**: NANDEESWARI A
+* **Register Number**: 212224220068
+* **Date of Submission**: 17-03-2026
 
 ---
 
@@ -85,13 +85,16 @@ Create a simple HTML page and verify that it can be accessed from a web browser 
 
 ## Workflow (Student Explanation)
 
-(Write the steps you followed in your own words)
+1. Create a Virtual Private Cloud (VPC) with a CIDR block (e.g., 10.0.0.0/16) to establish a logically isolated network in AWS. This forms the foundation where all cloud resources will reside.
+2. Create a public subnet (e.g., 10.0.1.0/24) inside the VPC and enable auto-assign public IP. This allows instances in the subnet to be accessible from the internet.
+3. Create an Internet Gateway (IGW) and attach it to the VPC. Then configure a route table with a default route (0.0.0.0/0) pointing to the IGW and associate it with the public subnet to enable internet access.
+4. Create a Security Group to act as a firewall. Allow inbound traffic for:
 
-1. ---
-2. ---
-3. ---
-4. ---
-5. ---
+SSH (port 22) → for remote access
+
+HTTP (port 80) → for web server access
+
+5. Launch an EC2 instance (Amazon Linux 2, t2.micro) in the public subnet, attach the security group, and configure a web server (Apache). Deploy a simple HTML page and verify access using the instance’s public IP.
 
 ---
 
@@ -99,19 +102,19 @@ Create a simple HTML page and verify that it can be accessed from a web browser 
 
 ### Screenshot 1: VPC and Subnet Details
 
-(Insert Screenshot Here)
+<img width="1914" height="913" alt="Screenshot 2026-02-24 105947" src="https://github.com/user-attachments/assets/0af1e33d-45ea-4bb1-8534-03e284d05dac" />
 
 ---
 
 ### Screenshot 2: EC2 Instance Running
 
-(Insert Screenshot Here)
+<img width="1902" height="911" alt="Screenshot 2026-02-24 111106" src="https://github.com/user-attachments/assets/ee98e4b0-21b1-4eaf-a0b5-523bf008bfd4" />
 
 ---
 
 ### Screenshot 3: Web Server Output in Browser
 
-(Insert Screenshot Here)
+<img width="1805" height="804" alt="Screenshot 2026-02-24 111144" src="https://github.com/user-attachments/assets/03f66c23-578e-4daa-8c60-d662e02fdcfb" />
 
 ---
 
